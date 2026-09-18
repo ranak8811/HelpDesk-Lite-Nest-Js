@@ -10,6 +10,8 @@ nest g class tickets/dto/update-ticket.dto --no-spec --flat
 
 nest g middleware common/request-logger --no-spec --flat
 
+nest g interceptor common/response --no-spec --flat
+
 in tsconfig.json (those fields which doesn't give any value will not change when updating anythign using patch)
 "useDefineForClassFields": false,
 
