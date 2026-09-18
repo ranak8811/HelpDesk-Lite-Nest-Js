@@ -8,6 +8,8 @@ nest g class tickets/dto/filter-tickets-query.dto --no-spec --flat
 
 nest g class tickets/dto/update-ticket.dto --no-spec --flat
 
+nest g middleware common/request-logger --no-spec --flat
+
 in tsconfig.json (those fields which doesn't give any value will not change when updating anythign using patch)
 "useDefineForClassFields": false,
 
