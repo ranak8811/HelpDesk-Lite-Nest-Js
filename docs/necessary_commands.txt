@@ -4,8 +4,13 @@ nest g interface  tickets/ticket  --flat
 
 nest g class tickets/dto/create-ticket.dto --no-spec --flat 
 
+nest g class tickets/dto/filter-tickets-query.dto --no-spec --flat
+
 ----------- Importandt -----------
 
 Typescript checks the type during the compile time only. it doesn't validate http request data in run time.
 
 for this we need to use dto using class-validator, class-transformer
+
+
+didn't implement global transform
